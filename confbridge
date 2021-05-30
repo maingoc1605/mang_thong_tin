@@ -1,0 +1,17 @@
+[general]
+
+[admin_user]
+type= user
+pin = 1234
+marked= yes
+admin=yes
+music_on_hold_when_empty=yes
+announce_user_count=yes
+
+[defaul_bridge]
+type = bridge
+max_members=100
+record_conference=yes
+video_mode = follow_talker
+sound_join
+sound_leave
