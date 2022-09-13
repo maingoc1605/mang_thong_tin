@@ -93,7 +93,7 @@ if __name__ == '__main__':
     )
     train_dataloader = DataLoader(dataset=train_dataset, batch_size=32, shuffle=True)
     val_dataloader = DataLoader(dataset=val_dataset, batch_size=32, shuffle=False)
-    model_1 =tiny_VGG(num_class=5)
+    model_1 =Net(num_class=5)
     Optimizer = torch.optim.Adam(params=model_1.parameters(), lr=0.01)
     main(model_1,train_dataloader, val_dataloader, Optimizer,loss_fn= nn.CrossEntropyLoss(), epochs=20)
 
